@@ -29,10 +29,8 @@ const Worksheet = ({ problems, timestamp }) => {
         const allProblems = [...problems.page1, ...problems.page2];
         return allProblems
             .map((problem, index) => {
-                const buffer = 11;
                 const statement = `${problem.num1} ${problem.operation} ${problem.num2}`;
                 const lhs = `${index + 1}: ${statement}`;
-                console.log(buffer, lhs.length, "a".repeat(buffer - lhs.length));
 
                 return `${lhs} = ${
                     problem.operation === "+" ? problem.num1 + problem.num2 : problem.num1 - problem.num2
@@ -42,10 +40,10 @@ const Worksheet = ({ problems, timestamp }) => {
     };
 
     const generateProblemRows = (problem, index) => {
-        const buffer = 11;
+        const buffer = 14;
         const statement = `${problem.num1} ${problem.operation} ${problem.num2}`;
         const lhs = `${index + 1}: ${statement}`;
-        console.log(buffer, lhs.length, "a".repeat(buffer - lhs.length));
+        console.log(buffer, lhs.length);
         return (
             <div key={index} className="problem-box">
                 <span>{`${lhs}${"\u00A0" + "\u00A0".repeat(buffer - lhs.length)}= `}</span>

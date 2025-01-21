@@ -12,6 +12,8 @@ const App = () => {
         const page1 = [];
         const page2 = [];
 
+        console.log(seed);
+
         // Generate a fixed random number for Page 1
         const fixedNumber = Math.floor(rng() * 101);
 
