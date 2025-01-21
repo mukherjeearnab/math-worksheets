@@ -1,6 +1,7 @@
 {
-  "name": "math-worksheet",
+  "name": "math-worksheets",
   "version": "0.1.0",
+  "homepage": "https://mukherjeearnab.github.io/math-worksheets",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "ajv": "^7.2.4"
+    "ajv": "^7.2.4",
+    "gh-pages": "^6.3.0"
   }
 }

@@ -34,7 +34,7 @@ const Worksheet = ({ problems, timestamp }) => {
                 const lhs = `${index + 1}: ${statement}`;
                 console.log(buffer, lhs.length, "a".repeat(buffer - lhs.length));
 
-                return `${lhs}${" " + " ".repeat(buffer - lhs.length)}= ${
+                return `${lhs} = ${
                     problem.operation === "+" ? problem.num1 + problem.num2 : problem.num1 - problem.num2
                 }\n`;
             })
