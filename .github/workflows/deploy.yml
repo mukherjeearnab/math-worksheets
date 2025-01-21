@@ -28,7 +28,7 @@ jobs:
             - name: Build project
               run: npm run build
 
-            # - name: Run tests
+            # - name: Run tests (Skipping)
             #   run: npm run test
 
             - name: Upload production-ready build files
