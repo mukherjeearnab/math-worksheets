@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Worksheet from "./components/Worksheet";
 import seedrandom from "seedrandom";
-import moment from "moment";
 
 const App = () => {
-    const [seed] = useState(`${moment().startOf("day").unix() * 1000}`);
+    const [seed, setSeed] = useState("");
     const [problems, setProblems] = useState({ page1: [], page2: [] });
 
     useEffect(() => {
+        const date = new Date();
+        setSeed(`${date.getFullYear()}${date.getMonth() + 1}${date.getDate()}`);
         const rng = seedrandom(seed);
         const page1 = [];
         const page2 = [];
 
-        console.log(seed);
+        console.log(seed, `${date.getFullYear()}${date.getMonth() + 1}${date.getDate()}`);
 
         // Generate a fixed random number for Page 1
         const fixedNumber = Math.floor(rng() * 101);

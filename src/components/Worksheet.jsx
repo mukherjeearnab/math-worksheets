@@ -4,9 +4,9 @@ import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
 import "./index.css"; // Import the CSS file
 
-const Worksheet = ({ problems, timestamp }) => {
+const Worksheet = ({ problems }) => {
     const worksheetRef = useRef();
-    const date = new Date(parseInt(timestamp));
+    const date = new Date();
 
     const generatePDF = async () => {
         const element = worksheetRef.current;
@@ -34,7 +34,7 @@ const Worksheet = ({ problems, timestamp }) => {
 
                 return `${lhs} = ${
                     problem.operation === "+" ? problem.num1 + problem.num2 : problem.num1 - problem.num2
-                }\n`;
+                }`;
             })
             .join("\n");
     };
@@ -46,7 +46,11 @@ const Worksheet = ({ problems, timestamp }) => {
         console.log(buffer, lhs.length);
         return (
             <div key={index} className="problem-box">
-                <span className="problem-number">{index+1}.&nbsp;</span><span>{`${statement}${"\u00A0" + "\u00A0".repeat(buffer - lhs.length)}= `}</span>
+                <span className="problem-number">
+                    {/* {index < 9 ? "0" : null} */}
+                    {index + 1}.&nbsp;
+                </span>
+                <span>{`${statement}${"\u00A0" + "\u00A0".repeat(buffer - lhs.length)}= `}</span>
                 <div className="answer-box"></div>
             </div>
         );
