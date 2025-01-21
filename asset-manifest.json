@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/math-worksheets/static/css/main.311fbaa1.css",
+    "main.js": "/math-worksheets/static/js/main.3e41cf2a.js",
+    "static/js/213.99bd6761.chunk.js": "/math-worksheets/static/js/213.99bd6761.chunk.js",
+    "static/js/732.505d6a02.chunk.js": "/math-worksheets/static/js/732.505d6a02.chunk.js",
+    "static/js/453.6a88ff9b.chunk.js": "/math-worksheets/static/js/453.6a88ff9b.chunk.js",
+    "index.html": "/math-worksheets/index.html",
+    "main.311fbaa1.css.map": "/math-worksheets/static/css/main.311fbaa1.css.map",
+    "main.3e41cf2a.js.map": "/math-worksheets/static/js/main.3e41cf2a.js.map",
+    "213.99bd6761.chunk.js.map": "/math-worksheets/static/js/213.99bd6761.chunk.js.map",
+    "732.505d6a02.chunk.js.map": "/math-worksheets/static/js/732.505d6a02.chunk.js.map",
+    "453.6a88ff9b.chunk.js.map": "/math-worksheets/static/js/453.6a88ff9b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.311fbaa1.css",
+    "static/js/main.3e41cf2a.js"
+  ]
+}
