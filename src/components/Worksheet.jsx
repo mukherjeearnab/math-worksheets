@@ -46,7 +46,7 @@ const Worksheet = ({ problems, timestamp }) => {
         console.log(buffer, lhs.length);
         return (
             <div key={index} className="problem-box">
-                <span>{`${lhs}${"\u00A0" + "\u00A0".repeat(buffer - lhs.length)}= `}</span>
+                <span className="problem-number">{index+1}.&nbsp;</span><span>{`${statement}${"\u00A0" + "\u00A0".repeat(buffer - lhs.length)}= `}</span>
                 <div className="answer-box"></div>
             </div>
         );

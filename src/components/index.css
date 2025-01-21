@@ -46,6 +46,10 @@
     padding: 0.1em;
 }
 
+.problem-number{
+    font-weight: bold;
+}
+
 .answer-box {
     width: 100px;
     height: 1.5em;
