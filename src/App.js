@@ -16,11 +16,11 @@ const App = () => {
         console.log(seed, `${date.getFullYear()}${date.getMonth() + 1}${date.getDate()}`);
 
         // Generate a fixed random number for Page 1
-        const fixedNumber = Math.floor(rng() * 101);
+        const fixedNumber = Math.floor(rng() * 1001);
 
         // Page 1: Fixed number + Random number
         for (let i = 0; i < 10; i++) {
-            const randomOperand = Math.floor(rng() * 101);
+            const randomOperand = Math.floor(rng() * 1001);
             const operation = rng() > 0.5 ? "+" : "-";
 
             if (operation === "+" || (operation === "-" && fixedNumber >= randomOperand)) {
@@ -32,8 +32,8 @@ const App = () => {
 
         // Page 2: Fully random problems
         for (let i = 0; i < 10; i++) {
-            const num1 = Math.floor(rng() * 101);
-            const num2 = Math.floor(rng() * 101);
+            const num1 = Math.floor(rng() * 1001);
+            const num2 = Math.floor(rng() * 1001);
             const operation = rng() > 0.5 ? "+" : "-";
 
             if (operation === "+" || (operation === "-" && num1 >= num2)) {
