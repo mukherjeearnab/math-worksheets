@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/math-worksheets/static/css/main.99b9ac87.css",
-    "main.js": "/math-worksheets/static/js/main.6af314d6.js",
+    "main.js": "/math-worksheets/static/js/main.622a8fdc.js",
     "static/js/213.99bd6761.chunk.js": "/math-worksheets/static/js/213.99bd6761.chunk.js",
     "static/js/732.505d6a02.chunk.js": "/math-worksheets/static/js/732.505d6a02.chunk.js",
     "static/js/453.6a88ff9b.chunk.js": "/math-worksheets/static/js/453.6a88ff9b.chunk.js",
     "index.html": "/math-worksheets/index.html",
     "main.99b9ac87.css.map": "/math-worksheets/static/css/main.99b9ac87.css.map",
-    "main.6af314d6.js.map": "/math-worksheets/static/js/main.6af314d6.js.map",
+    "main.622a8fdc.js.map": "/math-worksheets/static/js/main.622a8fdc.js.map",
     "213.99bd6761.chunk.js.map": "/math-worksheets/static/js/213.99bd6761.chunk.js.map",
     "732.505d6a02.chunk.js.map": "/math-worksheets/static/js/732.505d6a02.chunk.js.map",
     "453.6a88ff9b.chunk.js.map": "/math-worksheets/static/js/453.6a88ff9b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99b9ac87.css",
-    "static/js/main.6af314d6.js"
+    "static/js/main.622a8fdc.js"
   ]
 }
